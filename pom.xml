@@ -13,7 +13,6 @@
     <!-- 优质的 spring/boot/data/security/cloud 框架中文文档尽在 => https://springdoc.cn -->
     <groupId>top.om1ga</groupId>
     <artifactId>api-demo</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>api-demo</name>
     <description>api-demo</description>
     <properties>
@@ -33,6 +32,7 @@
     </dependencies>
 
     <build>
+        <finalName>api-demo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
