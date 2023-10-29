@@ -3,6 +3,7 @@ ENV HOME=/usr/app
 RUN mkdir -p $HOME
 WORKDIR $HOME
 ADD . $HOME
+RUN chmod +x mvnw
 RUN ./mvnw -f $HOME/pom.xml clean package
 
 FROM eclipse-temurin:17-jre-jammy
