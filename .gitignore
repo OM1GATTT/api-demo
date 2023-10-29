@@ -2,8 +2,8 @@ HELP.md
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-/target/*
-!/target/api-demo.jar
+target/
+!target/api-demo-3.1.5.jar
 
 ### STS ###
 .apt_generated
