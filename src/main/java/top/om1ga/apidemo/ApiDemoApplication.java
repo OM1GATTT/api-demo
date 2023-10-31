@@ -28,6 +28,9 @@ public class ApiDemoApplication {
 
     @PostMapping("/iot")
     public String postIot(@RequestBody String iot){
+        if(iot.isEmpty()){
+            return oldIot;
+        }
         if (!iot.equals(oldIot)){
             String temp = oldIot;
             oldIot = iot;
@@ -35,5 +38,4 @@ public class ApiDemoApplication {
         }
         return oldIot;
     }
-
 }
