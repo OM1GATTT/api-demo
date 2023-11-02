@@ -39,7 +39,7 @@ public class ApiDemoApplication {
             String date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
             list.add(Iot.builder().id(i).data(iot+" data: "+date).time(date).build());
             i++;
-            if (list.size()>999){
+            if (list.size()>100){
                 list.stream().limit(1).forEach(list::remove);
             }
         }catch (Exception e){
